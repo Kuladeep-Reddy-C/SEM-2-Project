@@ -1,0 +1,204 @@
+
+footer{
+    position: relative;
+    bottom : -10px;
+    left:-10px;
+    background-size: cover; /* Cover the entire footer */
+    background-repeat: no-repeat; /* Do not repeat the background image */
+    background-position: center;
+    background-image: url('https://t3.ftcdn.net/jpg/07/27/82/38/240_F_727823847_4BxxBw0GdPopEN79fzruVPF0uwsIAOEA.jpg');
+    color: #fff;
+    padding: 100px 0 30px;
+    font-size: 13px;
+    line-height: 20px;
+    border-top-left-radius: 125px;
+    border-top-right-radius: 125px;
+}
+
+.row{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+
+}
+
+.col{
+    flex-basis: 25%;
+    padding: 10px;
+
+}
+
+.logo{
+    width: 100px;
+    margin-bottom: 10px;
+    margin-top: 0px;
+    zoom: 1.8;
+}
+
+.col h3{
+    width:fit-content;
+    margin-bottom: 40px;
+    margin-top: 0px;
+    position: relative;
+}
+
+ul li{
+    list-style: none;
+    margin-bottom: 10px;
+    margin-left: 0px;
+    margin-top: 0px;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+    transition: all 0.8s;
+}
+
+a:hover{
+    transform: scale(1.2);
+    box-shadow : 0px 0px 0px 0px rgb(255, 60, 0); 
+}
+
+form{
+   padding-bottom: 15px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   border-bottom: 1px solid #ccc; 
+   margin-bottom: 50px;
+}
+
+form .far{
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+form input{
+    width: 100%;
+    background: transparent;
+    color: #ccc;
+    border: 0;
+    outline: none;
+}
+
+form button{
+    background: transparent;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+}
+
+form button .fa-solid {
+    font-size: 16px;
+    color: #ffffff;
+}
+
+.social-icons .fa-brands{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    color: #000;
+    background: #fff;
+    cursor: pointer;
+    margin-right: 15px;
+    transition: all 0.8s;
+}
+
+.social-icons .fa-brands:hover{
+    transform: scale(1.2);
+    box-shadow : 0px 0px 0px 0px rgb(255, 60, 0)
+}
+
+hr{
+    width: 90%;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+    margin: 20px auto;
+    opacity: 0.3;
+}
+
+.z1 hr{
+    width: 90%;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+    margin: 20px 0px;
+    opacity: 0.3;
+}
+
+.cp{
+    text-align: center;
+    opacity: 0.5;
+}
+
+.uli{
+    width: 100%;
+    height: 5px;
+    background: #767676;
+    border-radius: 3px;
+    position: absolute;
+    top: 25px;
+    left: 0px;overflow: hidden;
+}
+
+.uli span{
+    width: 15px;
+    height: 100%;
+    background: #fff;
+    border-radius: 3px;
+    position: absolute;
+    top: 0;
+    left: 10px;
+    animation: moving 2s linear infinite;
+
+}
+
+@keyframes moving{
+    0%{
+        left: -20px;
+    }
+    100%{
+        left:100%;
+    }
+}
+
+.c1 hr,.z1 hr{
+    opacity: 0.3;
+    width: 100%;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.z1 hr{
+    opacity: 0.3;
+    width: 100%;
+    margin-left: -2px;
+    margin-top: 20px;
+    margin-bottom: 23px;
+}
+
+.colin{
+    display: flex;
+    justify-content: space-between;
+}
+
+.r1,.r2{
+    flex: 1;
+    
+}
+
+.r2{
+    margin-top: 0px;
+    margin-left: 40px;
+}
+
+.z1{
+    margin-left: 40px;
+    font-size: 15px;
+}

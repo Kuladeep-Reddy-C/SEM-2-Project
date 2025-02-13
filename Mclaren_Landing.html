@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mc Laren</title>
+    <link rel="icon" type="image/x-icon" href="Ai/icon.jpg">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/629c368448.js" crossorigin="anonymous"></script>
+
+    <style>
+        * { margin: 0; padding: 0;}
+
+        #model video{
+            width: 100%;
+            height: 10%;
+            object-fit: cover;
+        }
+
+        .txt1 p{
+            position: absolute;
+            top: 100px; 
+            left: 80px;
+            z-index: 2;
+            color: #ccc;
+            font-size: 66px;
+            /* font-family: 'Helvetica Neue', sans-serif; */
+            font-family: 'Montserrat', sans-serif;
+            letter-spacing: 2px;
+            font-weight: 50;
+            font-stretch: condensed;
+            opacity: 1;
+        }
+
+        #but1{
+            position: absolute;
+            top: 350px; 
+            left: 80px;
+            z-index: 2;
+            padding: 10px 50px;
+            margin-top: 10px;
+            background-color: rgb(253, 106, 27);
+            border-radius: 20px;
+            border: 1px solid rgb(253, 106, 27);
+            font-size: large;
+            color: #fff;
+            text-align: center;
+            cursor: pointer;
+            margin-bottom: -10px;
+           
+        }
+        
+        #but1:hover{
+            background: rgb(253, 106, 27);;
+            box-shadow: 0 0 30px rgb(253, 106, 27);;
+        }
+
+        .cover{
+            background-color: #2e353a;
+            width: 100%;
+            height: 85px;
+            position: absolute;
+            top: 0;
+        }
+
+        .perm{
+            position: absolute;
+            bottom: -592px;
+            width: 100%;
+            height: 532px;
+            background-color: #2e353a;
+            margin-top: 0px;
+
+        }
+
+        .per p{
+            margin-left: 80px;
+            font-size: 40px;
+            color: white;
+            /* font-family: 'Helvetica Neue', sans-serif; */
+            font-family: 'Montserrat', sans-serif;
+            margin-top: 190px;
+        }
+
+        .pp p{
+            position: absolute;
+            right: 80px;
+            top: 190px;
+            color: #ffffff;
+            line-height: 28px;
+            font-size: 19px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 900;
+            
+        }
+
+        .pp2 p{
+            position: absolute;
+            right: 90px;
+            top: 320px;
+            color: #ffffff;
+            line-height: 28px;
+            font-size: 19px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 900;
+            
+        }
+
+        .over{
+            width: 100%;
+            position: absolute;
+            top: 0;
+            height: 70px;
+            background-color: #181C20;
+        }
+
+        .over img{
+            position: absolute;
+            left: 80px;
+            top: 10px;
+        }
+
+        .o1{
+            position: absolute;
+            top: 23px;
+            left: 150px;
+            font-family: 'Montserrat', sans-serif;
+            color: #ffffff;
+            font-weight: 1000;
+            font-size: 20px;
+        }
+
+        .spec{
+            width: 100%;
+            height: 1580px;
+            background-color: #181C20;
+            margin-top: 0px;
+            color: #ffffff;
+
+        }
+
+        .model hr{
+            border: 0;
+            border-bottom: 1px solid #181c20;
+            margin-top: 463px;
+            opacity: 0.7;
+        }
+
+        /* .over1{
+            width: 100%;
+            position: absolute;
+            top: 0;
+            height: 70px;
+            background-color: #181C20;
+        }
+
+        .over1 img{
+            position: absolute;
+            left: 80px;
+            top: 10px;
+            display: inline;
+            margin-top: 10px;
+            margin-left: 80px;
+        }
+
+        .o2{
+            position: relative;
+            top: 0px;
+            left: 15px;
+            font-family: 'Montserrat', sans-serif;
+            color: #ffffff;
+            font-weight: 1000;
+            font-size: 20px;
+            display: inline;
+            margin-top: 0px;
+            margin-left: 15px;
+        } */
+
+        .spec img{
+            width: auto;
+            height: auto;
+            margin-left: 6.5%;
+            margin-top: 40px;
+        }
+
+        .z1{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-top: 70px;
+            font-family: 'Montserrat', sans-serif;
+            color: #ccc;
+        }
+
+        .z1 h1{
+            letter-spacing: 2px;
+            font-weight: 50;
+            font-stretch: condensed;
+            opacity: 1;
+        }
+
+        .z1 h1::after {
+        content: '';
+        display: block;
+        width: 100px;
+        height: 2px;
+        background-color: rgb(253, 106, 27);
+        margin: 10px auto;
+        }
+
+        .z1 p{
+            margin-top: 20px;
+            margin-left: 80px;
+            font-size: larger;
+        }
+
+        .cop{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            margin-top: 160px;
+        }
+
+        .c1{
+            /* flex-basis: 50%; */
+            margin-top: 29px;
+        }
+
+        /* .c2{
+            flex-basis: 50%;
+        } */
+
+        .c1 h1{
+            letter-spacing: 2px;
+            font-weight: 200;
+            font-size: 50px;
+            font-stretch: condensed;
+            opacity: 1; 
+            font-family: 'Montserrat', sans-serif;
+            color: #ccc;
+            margin: auto;
+            margin-bottom: 30px;
+        }
+
+        .c1 p{
+            color: #ffffff;
+            line-height: 28px;
+            font-size: 16px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 900;
+        }
+
+        .c1 button{
+            padding: 10px 25px;
+            margin-top: 40px;
+            background-color: rgba(65, 253, 27, 0.884);
+            /* border: 1px solid rgba(68, 253, 27, 0.716); */
+            border: none;
+            height: 60px;
+            font-weight: 650;
+            color: black;
+            text-align: center;
+            font-family: 'Arial', sans-serif;
+            cursor: pointer;
+           
+        }
+
+        .c1 span{
+            margin-left: 180px;
+            color: #ffffff;
+            font-size: larger;
+
+        }
+
+        .C2 img{
+            width: auto;
+            height: auto;
+            margin-right: 20px;
+        }
+
+        .ult{
+            margin-top: 89px;
+            width: 100%;
+            height: auto;
+            font-family: 'Montserrat', sans-serif;
+            background-color:#ffffff;
+        }
+
+        .conti {
+            margin-top: 0px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 380px;
+        }
+
+        .heading {
+            font-size: 64px;
+            color: #2c3e50;
+            text-align: center;
+            margin-bottom: 40px;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            background: linear-gradient(45deg, #db6034, #9b59b6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-top: 80px;
+        }
+
+        .text {
+            color: white;
+            text-align: center;
+            line-height: 28px;
+            font-size: 18px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 900;
+        }
+
+        .text span{
+            background-color: #181C20;
+        }
+
+        #sen{
+            width: auto;
+            height: auto;
+            zoom: 0.4;
+        }
+
+        .senna{
+            display: flex;
+            flex-direction: row;
+            justify-content:space-evenly;
+            gap: 0px;
+            margin-top: 100px;
+        }
+
+        .s1{
+            /* flex-basis: 50%; */
+            margin-top: 29px;
+        }
+
+        /* .c2{
+            flex-basis: 50%;
+        } */
+
+        .senna h1{
+            letter-spacing: 2px;
+            font-weight: 200;
+            font-size: 50px;
+            font-stretch: condensed;
+            opacity: 1; 
+            font-family: 'Montserrat', sans-serif;
+            color: black;
+            margin: auto;
+            margin-bottom: 30px;
+        }
+
+        .senna p{
+            color: #000000;
+            line-height: 28px;
+            font-size: 16px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 1000;
+        }
+
+        .senna button{
+            padding: 10px 25px;
+            margin-top: 40px;
+            background-color: #181C20;
+            /* border: 1px solid rgba(68, 253, 27, 0.716); */
+            border: none;
+            height: 60px;
+            font-weight: 650;
+            color: rgb(255, 255, 255);
+            text-align: center;
+            font-family: 'Arial', sans-serif;
+            cursor: pointer;
+           
+        }
+
+        .senna span{
+            margin-left: 180px;
+            color: #ffffff;
+            font-size: larger;
+
+        }
+
+        /* .senna img{
+            margin-right: 20px;
+        } */
+
+        #sennaspec{
+            width: 100%;
+            height: auto;
+            margin-top: 100px;
+            zoom: 0.75;
+            margin-left: 0;
+            margin-top: 80px;
+        }
+
+        .speed{
+            display: flex;
+            flex-direction: row;
+            justify-content:space-evenly;
+            gap: 0px;
+            margin-top: -3px;
+            background-color: #E3DED4;
+            height: 580px;
+        }
+
+        .d1{
+            /* flex-basis: 50%; */
+            /* margin-top: 29px; */
+            margin-top: auto;
+            margin-bottom: auto;
+        }
+
+        .speed h1{
+            letter-spacing: 2px;
+            font-weight: 200;
+            font-size: 50px;
+            font-stretch: condensed;
+            opacity: 1; 
+            font-family: 'Montserrat', sans-serif;
+            color: black;
+            margin: auto;
+            margin-bottom: 30px;
+            margin-top: 30px;
+        }
+
+        .speed p{
+            color: #000000;
+            line-height: 28px;
+            font-size: 16px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 1000;
+        }
+
+        .speed button{
+            padding: 10px 25px;
+            margin-top: 40px;
+            margin-bottom: 60px;
+            background-color: #181C20;
+            /* border: 1px solid rgba(68, 253, 27, 0.716); */
+            border: none;
+            height: 60px;
+            font-weight: 650;
+            color: rgb(255, 255, 255);
+            text-align: center;
+            font-family: 'Arial', sans-serif;
+            cursor: pointer;
+           
+        }
+
+        .speed span{
+            margin-left: 180px;
+            color: #ffffff;
+            font-size: larger;
+
+        }
+
+        #spe{
+            width: auto;
+            height: auto;
+            zoom: 0.4;
+            margin-left: -40px;
+            margin-top: 120px;
+           
+        }
+
+        #speedspec{
+            width: 100%;
+            height: auto;
+            margin-top: 0px;
+            zoom: 0.75;
+            margin-left: 0;
+            margin-bottom: 0;
+        }
+
+        .legacy{
+            height: 600px;
+            background-color: #181C20;
+        }
+        .legtop{
+            margin-top: -5px;
+        }
+
+        .legtop h1 {
+            margin-left: 50px;
+            padding-left: 20px;
+            border-left: 5px solid;
+            border-image: linear-gradient(to bottom, #e01a25, #ffa07a) 1;
+            color: #ffffff;
+            letter-spacing: 2px;
+            font-weight: 200;
+            font-size: 50px;
+            font-stretch: condensed;
+            opacity: 1; 
+            font-family: 'Montserrat', sans-serif;
+            margin-bottom: 30px;
+            
+        }
+
+        .legtop p {
+            margin-top: 30px;
+            margin-left: 50px;
+            width: 75%;
+            line-break: loose;
+            color: #ffffff;
+            line-height: 28px;
+            font-size: 16px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 1000;
+        }
+
+        .solus{
+            display: flex;
+            flex-direction: row;
+            justify-content:space-evenly;
+            gap: 0px;
+            margin-top: 100px;
+        }
+
+        .so1{
+            /* flex-basis: 50%; */
+            margin-top: 29px;
+        }
+
+        /* .c2{
+            flex-basis: 50%;
+        } */
+
+        .solus h1{
+            letter-spacing: 2px;
+            font-weight: 200;
+            font-size: 50px;
+            font-stretch: condensed;
+            opacity: 1; 
+            font-family: 'Montserrat', sans-serif;
+            color: #ffffff;
+            margin: auto;
+            margin-bottom: 30px;
+        }
+
+        .solus p{
+            color: #ffffff;
+            line-height: 28px;
+            font-size: 16px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 1000;
+        }
+
+        .solus button{
+            padding: 10px 25px;
+            margin-top: 40px;
+            background-color: #181C20;
+            /* border: 1px solid rgba(68, 253, 27, 0.716); */
+            border: none;
+            height: 60px;
+            font-weight: 650;
+            color: rgb(255, 255, 255);
+            text-align: center;
+            font-family: 'Arial', sans-serif;
+            cursor: pointer;
+           
+        }
+
+        .solus span{
+            margin-left: 180px;
+            color: #ffffff;
+            font-size: larger;
+
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="main1">
+
+        <div class="model">
+            <!-- <img id="model" src="user_profile/models2.jpg" alt="models"> -->
+            <video width="100%" autoplay loop muted>
+                <source src="user_profile/artura.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="txt1">
+                <p><span style="font-size: 20px;">PERFORMANCE AMPLIFIED,</span><br> NEW McLAREN <br> ARTURA SPIDER</p>
+                
+            </div>
+            <div class="txt2">
+                <button id="but1">DISCOVER MORE</button>
+            </div>
+            <div class="cover">
+
+            </div>
+            <div class="perm">
+                <div class="over">
+                    <img width="48" height="48" src="https://img.icons8.com/color/48/mclaren.png" alt="mclaren"/>
+                    <p class="o1">OVERVIEW</p>
+                </div>
+                <div class="per">
+                    <p>PERFORMANCE AMPLIFIED,</p>
+                </div>
+
+                <div class="pp">
+                    <p>The New Artura Spider delivers complete driver focus and a heightened <br> sense of engagement. Super-light engineering, race-honed dynamics and <br> advanced electrification, it is driving spirit. Amplified.</p>
+                    
+                </div>
+
+                <div class="pp2">
+                    <p>Central to this is the new Retractable Hard Top, which enhances every <br> sensation. From stealth EV mode for seamless urban travel, to the visceral, <br> elemental thrill of open-air performance driving. Artura Spider is the <br> complete supercar.</p>
+                </div>
+            </div>
+
+            <hr>
+        </div>
+        
+    </div>
+    <div class="spec">
+        <!-- <div class="specs1">
+            <div class="over1">
+                <img width="48" height="48" src="https://img.icons8.com/color/48/mclaren.png" alt="mclaren"/>
+                <p class="o2">SPECS</p>
+            </div> -->
+        <img src="user_profile/coll2.png" alt="collage">
+
+        <div class="z1">
+            <div class="m1">
+                <h1>MAX TORQUE</h1>
+                
+                <p>720 Nm</p>
+            </div>
+
+            <div class="m2">
+                <h1>MAX POWER</h1>
+                
+                <p>700 PS</p>
+            </div>
+
+            <div class="m3">
+                <h1>0 - 100 kmph</h2>
+                
+                <p style="margin-left: 100px;">3.0 s</p>
+            </div>
+        </div>
+
+        <div class="cop">
+            <div class="c1">
+                <h1>ARTURA COUPE</h1>
+                <P>Introducing the new Artura, a high-performance hybrid supercar to it’s core.<br> From the advanced McLaren Carbon Fibre Lightweight Architecture (MCLA) to <br>the V6 twin-turbocharged hybrid petrol engine that forms its beating heart.<br> Our relentless pursuit of lightness reaches another level. Aerodynamic <br>efficiency is more advanced than ever.</P>
+                <button>DISCOVER MORE <span><i class="fa-solid fa-plus"></i></span></button>
+            </div>
+
+            <div class="c2">
+                <img src="user_profile/coupe.png" alt="ARTURA COUPE">
+            </div>
+
+        </div>
+
+        <div class="z1">
+            <div class="m1">
+                <h1>MAX TORQUE</h1>
+                
+                <p>720 Nm</p>
+            </div>
+
+            <div class="m2">
+                <h1>MAX POWER</h1>
+                
+                <p>671 PS</p>
+            </div>
+
+            <div class="m3">
+                <h1>0 - 200 kmph</h2>
+                
+                <p style="margin-left: 100px;">8.3 s</p>
+            </div>
+        </div>
+
+        <div class="ult">
+            <div class="conti">
+                <h1 class="heading">ULTIMATE</h1>
+                <p class="text"><span>The high-end Ultimate Series was led by the P1 and P1 GTR, now it includes the Senna, Senna GTR and the </span><br>
+                     <span>upcoming Speedtail, intended to be the successor to the original F1. The F1 and 12C were retroactively included in the</span> <br>
+                     <span>Ultimate and Super Series, respectively.
+                        The structure was expanded to include the GT Series with the release of the McLaren GT in 2019.</span><br><span>The Super Series, considered to be 
+                    McLaren's core model range, originally included the 650S, 625C, and 675LT. These were replaced with the 720S</span> <br> <span>in 2017 (and 720S Spider in 2018). </span></p>
+              </div>
+            <div class="senna">
+                <div class="s1">
+                    <h1>McLAREN SENNA</h1>
+                    <p>Inspired by McLaren’s greatest driver and F1 icon Ayrton Senna: A limited<br> edition track car, that could legally be used on the road and set the fastest<br> lap times. Every last detail of the McLaren Senna was dedicated to<br> releasing the driver’s absolute best.
+
+                        Announced in late 2017, the limited<br> production hand-built cars were already sold out as soon as it was unveiled.</p>
+                    <button>DISCOVER MORE <span><i class="fa-solid fa-plus"></i></span></button>
+                </div>
+
+                <div class="s2">
+                    <img id="sen" src="https://mclaren.scene7.com/is/image/mclaren/McLaren%20Senna%20-%204:crop-2x1?wid=1940&hei=970" alt="Senna">
+                </div>
+            </div>
+            <img id="sennaspec" src="user_profile/senna_spec.png" alt="specification">
+
+            <div class="speed">
+                <div class="d2">
+                    <img id="spe" src="user_profile/speedtail31.jpg" alt="Speed">
+                </div>
+                <div class="d1">
+                     <h1>THE SPEEDTAIL</h1>
+                    <p>A pure fusion of science and art in automotive form. The Speedtail is<br>McLaren’s first ever Hyper-GT. Our most aerodynamically efficient hypercar<br> ever. And the fastest McLaren to date. With a pioneering 1070PS hybrid<br>
+                        powertrain at its core. The McLaren Speedtail brings together<br> unprecedented levels of innovation and elegance to create a new <br>benchmark in automotive design. </p>
+                    <button>DISCOVER MORE <span><i class="fa-solid fa-plus"></i></span></button>
+                </div>
+
+            </div>
+            <img id="speedspec" src="user_profile/speedspec2.png" alt="specification">
+        </div>
+
+        <div class="legacy">
+            <div class="legtop">
+                <br>
+                <br>
+                <br>
+                <h1>LEGACY</h1>
+                <p>McLaren's legacy cars are a testament to the company's rich heritage in motorsport and automotive innovation. From the iconic F1 to the groundbreaking P1, these cars have set new standards in performance, design, and technology. With their sleek designs, powerful engines, and advanced technology, McLaren's legacy cars are a true marvel of modern engineering. They are a symbol of McLaren's commitment to pushing the boundaries of what is possible in the world of automotive design and engineering.</p>
+            </div>
+
+            <div class="solus">
+                <div class="so1">
+                    <h1>THE SOLUS GT</h1>
+                    <p>Inspired by McLaren’s greatest driver and F1 icon Ayrton Senna: A limited<br> edition track car, that could legally be used on the road and set the fastest<br> lap times. Every last detail of the McLaren Senna was dedicated to<br> releasing the driver’s absolute best.</p>
+
+                        <!-- Announced in late 2017, the limited<br> production hand-built cars were already sold out as soon as it was unveiled.</p> -->
+                    <button>DISCOVER MORE <span><i class="fa-solid fa-plus"></i></span></button>
+                </div>
+
+                <div class="so2">
+                    <img id="sen" src="user_profile/solusgt.webp" alt="Senna">
+                </div>
+
+            </div>
+
+            <div class="z1" style="color: black;">
+                <div class="m1">
+                    <h1  style="color: black; opacity: 1;">MAX TORQUE</h1>
+                    
+                    <p  style="color: black; opacity: 1;">720 Nm</p>
+                </div>
+    
+                <div class="m2">
+                    <h1>MAX POWER</h1>
+                    
+                    <p>671 PS</p>
+                </div>
+    
+                <div class="m3">
+                    <h1>0 - 200 kmph</h2>
+                    
+                    <p style="margin-left: 100px;">8.3 s</p>
+                </div>
+            </div>
+            <hr style="margin-top: 80px; opacity: 0.5; margin-bottom: 0px;">
+            <div class="cop" style="margin-bottom: 30px;">
+                <div class="c1">
+                    <h1 style="color: black; opacity: 1;">720s SPIDER</h1>
+                    <P style="color: black; opacity: 1;">Introducing the new 720s, a high-performance hybrid supercar to it’s core.<br> From the advanced McLaren Carbon Fibre Lightweight Architecture (MCLA) to <br>the V6 twin-turbocharged hybrid petrol engine that forms its beating heart.<br> Our relentless pursuit of lightness reaches another level. Aerodynamic <br>efficiency is more advanced than ever.</P>
+                    <button style="background-color: #181C20; color: #ffffff;">DISCOVER MORE <span><i class="fa-solid fa-plus"></i></span></button>
+                </div>
+    
+                <div class="c2">
+                    <img style="zoom: 0.9;" src="user_profile/720s.png" alt="720s">
+                </div>
+    
+            </div>
+
+            <div class="z1" style="color: black; margin-top: 160px;">
+                <div class="m1">
+                    <h1  style="color: black; opacity: 1;">MAX TORQUE</h1>
+                    
+                    <p  style="color: black; opacity: 1;">800 Nm</p>
+                </div>
+    
+                <div class="m2">
+                    <h1>MAX POWER</h1>
+                    
+                    <p>601 PS</p>
+                </div>
+    
+                <div class="m3">
+                    <h1>0 - 200 kmph</h2>
+                    
+                    <p style="margin-left: 100px;">8.0 s</p>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>

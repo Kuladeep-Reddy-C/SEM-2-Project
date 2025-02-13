@@ -1,0 +1,542 @@
+/* this is temparary */
+html
+{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top : 800px;
+    padding-right : 50px;
+    padding-left : 50px;
+    background-color:aliceblue;
+}
+
+/* The sidebar menu */
+.sidebar-content
+{
+    display : flex;
+    flex-direction : column;
+    align-items : start;
+    justify-content: space-around;
+    height : 650px;
+
+}
+
+.sidebar {
+    background-color: rgba(0, 0, 0, .45);
+    -webkit-backdrop-filter: blur(46px);
+    backdrop-filter: blur(46px);
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    left: 0;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+  }
+  
+  /* The sidebar links */
+  .sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidebar a:hover {
+    color: #f1f1f1;
+  }
+  
+  /* Position and style the close button (top right corner) */
+  .sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  /* The button used to open the sidebar */
+  .openbtn {
+    position: absolute;
+    top : 45px;
+    right : 40px;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    padding: 10px 15px;
+    border: none;
+    border-radius : 50%;
+  }
+  
+  .openbtn:hover {
+    background-color: #444;
+    color: #fff;
+  }
+  
+  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+  #main {
+    transition: margin-left .5s; /* If you want a transition effect */
+    padding: 20px;
+  }
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+  }
+
+/* this is the slideshow box */
+.h-main
+{
+    font-weight : 900;
+    color : white;
+    background-image: url(bgs/a-1.jpg);
+    background-position:bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height :750px;
+    width : auto;
+    position : absolute;
+    top:0;
+    right :0;
+    left :0;
+    transition: all 1s ease-in-out;
+}
+.main-logo{
+    position : absolute;
+    height :90px;
+    top : 30px;
+    left : 50px;
+}
+
+
+.h-heading
+{
+    position : absolute;
+    top : 30px;
+    right : 160px;
+    align-items: center;
+    display : flex;
+    flex-direction: row;
+    width : 600px;
+    height : 70px;
+    /* background-color: rgb(50, 52, 52); */
+    justify-content: space-around;
+}
+.h-heading div
+{
+    transition : all 0.6s;
+}
+.h-heading div:hover
+{
+    transform: scale(1.5);
+    color : rgb(43, 197, 0);
+}
+.h-three-dash-svg
+{
+    width : 40px;
+    height : auto;
+    position : absolute;
+    top: 50px;
+    right : 50px;
+}
+.h-three-dash-svg-1
+{
+    width : 36px;
+    height : auto;
+    position : absolute;
+    top: 50px;
+    right : 120px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+.h-h1
+{
+    font-style :italic;
+    position: absolute;
+    top : 130px;
+    left : 100px;
+    font-size : 40px;
+}
+/* Hover effect for each letter */
+#glowingText span:hover {
+    color: #fff; /* White text on hover */
+    text-shadow:
+        0 0 5px rgba(0, 255, 21, 0.251),
+        0 0 10px rgba(34, 255, 0, 0.332),
+        0 0 20px rgba(0, 106, 9, 0.636),
+        0 0 40px rgb(0, 229, 255),
+        0 0 80px rgb(0, 234, 255),
+        0 0 90px rgb(98, 255, 0),
+        0 0 100px rgb(64, 255, 0),
+        0 0 150px rgb(21, 255, 0);
+}
+.h-h2 div{
+    margin-top : 40px;
+}
+.h-h2 
+{
+    position : absolute;
+    top : 230px;
+    left : 100px;
+
+}
+.h-img-collection
+{
+    margin-left : 20px;
+    margin-right : 20px;
+    display : grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    column-gap: 20px;
+}
+.h-img
+{
+    position : absolute;
+    width : 250px;
+    bottom : 60px;
+    border-radius : 30px;
+    box-shadow: 10px 10px 50px 10px rgba(0,0,0,1);
+    transition: all 0.8s;
+}
+.h-img:hover
+{
+    transform: scale(1.1);
+    box-shadow : 0px 0px 0px 0px rgb(0, 255, 17)
+}
+.start-banner #main
+{
+    transition: margin-left .5s; /* If you want a transition effect */
+    padding: 20px;
+}
+.start-banner .openbtn {
+    position: absolute;
+    top : 45px;
+    right : 40px;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    padding: 10px 15px;
+    border: none;
+    border-radius : 50%;
+}
+      
+.start-banner .openbtn:hover 
+{
+    background-color: #444;
+    color: #fff;
+}
+.banner
+{
+    width : 100%;
+    height : auto;
+}
+.banner-div
+{
+    position : relative;
+}
+.banner-text
+{
+    position:absolute;
+    bottom : 10%;
+    left : 6%;
+    color :rgb(255, 255, 255);
+    padding : 10px 20px;
+    background-color: rgba(230, 230, 230, .45);
+    -webkit-backdrop-filter: blur(46px);
+    backdrop-filter: blur(46px);
+}
+.thing-2
+{
+    margin-top : 50px;
+    /* background-color: aqua; */
+    display : grid;
+    grid-template-columns: 1fr 800px ;
+}
+.thing-2-img
+{
+    width : 700px;
+}
+.thing-2-text
+{
+    margin-top : 17%;
+    text-align: center;
+    width : 600px;
+    margin-left : 50px;
+    font-style:oblique;
+    font-weight : 700;
+}
+.h-header
+{
+    z-index: 5;
+    top :0;
+    position: sticky;
+    display : flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top : 50px;
+    padding-left : 50px;
+    padding-right : 500px;
+    align-items: center;
+    height : 100px;
+    background-color: #f1f1f1;
+}
+.h-header div{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size : 24px;
+    color : rgb(74, 74, 74);
+    &:hover
+    {
+        color :rgba(48, 155, 255, 0.759);
+        text-decoration: underline;
+    }
+}
+.thing-3
+{
+    margin-top : 70px;
+    display : flex;
+    flex-direction: row;
+    justify-content: start;
+}
+.thing-3-img
+{
+    width : 1000px;
+}
+.thing-3-text
+{
+    padding-left : 30px;
+    padding-right : 20px;
+}
+
+.thing-3-text .t-1
+{
+    margin-top : 20px;
+    font-size : 20px;
+    font-family :Verdana, Geneva, Tahoma, sans-serif;
+    font-weight : 700;
+}
+.thing-3-text .t-2
+{
+    margin-top : 0px;
+    font-size : 50px;
+    font-family :Verdana, Geneva, Tahoma, sans-serif;
+    font-weight : 500;
+}
+.thing-3-text .t-3
+{
+    font-size : 20px;
+    font-family : Geneva, Tahoma, sans-serif;
+    font-weight : 500;
+}
+.thing-3-text button
+{
+    width : 100%;
+    margin-bottom : 20px;
+    padding : 18px 20px;
+    font-size : 18px;
+    border : none;
+    border-radius : 5px;
+}
+.b-1
+{
+    color : white;
+    background-color: rgb(0, 129, 86);
+    &:hover{
+        background-color : rgba(10, 143, 0, 0.993);
+        
+    }
+}
+.b-2
+{
+    background-color : white;
+    color: rgb(0, 129, 86);
+    box-shadow : inset 0px 0px 30px 2px rgba(200,200,200,0.8);
+    &:hover{
+        background-color : rgba(13, 255, 0, 0.093);
+        
+        
+    }
+}
+.thing-part-2
+{
+    margin-top : 70px;
+    display : grid;
+    grid-template-columns: 1fr 1000px;
+    justify-content: start;
+}
+.three-part-2-img-div
+{
+    display : grid;
+    grid-template-columns: repeat(3, 300px); /* Each image is 300px wide */
+    width: 1000px;
+}
+.thing-part-2-img
+{
+    height : 600px;
+    width : 330px;
+}
+.thing-part-2-text
+{
+    padding-left : 30px;
+    padding-right : 20px;
+}
+
+.thing-part-2-p1
+{
+    margin-top : 20px;
+    font-size : 20px;
+    font-family :Verdana, Geneva, Tahoma, sans-serif;
+    font-weight : 700;
+}
+.thing-part-2-p2
+{
+    font-size : 20px;
+    font-family : Geneva, Tahoma, sans-serif;
+    font-weight : 500;
+}
+.thing-3-text button
+{
+    width : 100%;
+    margin-bottom : 20px;
+    padding : 18px 20px;
+    font-size : 18px;
+    border : none;
+    border-radius : 5px;
+}
+.thing-3_2-img
+{
+    width : 300px;
+    height : 600px;
+}
+.tex
+{
+    padding : 10px 5px;
+    font-family: 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+.link-aston-martin
+{
+    color :rgb(69, 78, 255);
+    font-size : 18px;
+    &:hover
+    {
+        text-decoration: underline;
+        font-style:oblique
+    }
+}
+
+.thing-4
+{
+    margin-top : 100px;
+    padding-right : 50px;
+    display: grid;
+    grid-template-columns: 1fr 950px;
+}
+.thing-4 .car-1
+{
+    background-color:white;
+    margin-right : 40px;
+    padding : 10px 50px;
+    height : 500px;
+    width : 250px;
+    box-shadow:0px,0px,30px,2px rgba(200,200,200,0.8);
+    display : flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.part-2
+{
+    width : 1000px;
+    box-shadow: 0px,0px,30px,2px rgba(0,0,200,1);
+    display : grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap : 40px;
+    justify-content: start;
+    align-items: center;
+}
+.thing-4 .car-1-img
+{
+
+    width : 270px;
+}
+
+.thing-4 .main-text
+{
+    padding-left: 20px;
+    margin-top : 20px;
+    font-size : 22px;
+    font-family :Verdana, Geneva, Tahoma, sans-serif;
+    font-weight : 700;
+}
+.thing-4 .body-text
+{
+    padding: 5px 20px;
+    margin-top : 70px;
+    text-align: center;
+    font-size : 18px;
+    font-family : Geneva, Tahoma, sans-serif;
+    font-weight : 500;
+}
+.car-1 button
+{
+    width : 100%;
+    margin-bottom : 20px;
+    padding : 10px 20px;
+    font-size : 18px;
+    border : none;
+    border-radius : 5px;
+}
+.car-1 .b-1
+{
+    color : white;
+    background-color: rgb(0, 129, 86);
+    &:hover{
+        background-color : rgba(10, 143, 0, 0.993);
+        
+    }
+}
+.car-1 .b-2
+{
+    background-color : white;
+    color: rgb(0, 129, 86);
+    box-shadow : inset 0px 0px 30px 2px rgba(200,200,200,0.8);
+    &:hover{
+        background-color : rgba(13, 255, 0, 0.093);
+        
+        
+    }
+}
+.car-text-1
+{
+    margin : 30px 2px;
+    font-size : 17px;
+    font-weight: 500;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+
+.hidden
+{
+    transition : all 0.3s;
+    opacity :0;
+    filter : blur(5px);
+    transform : translateY(50%)
+}
+.show
+{
+    opacity :1;
+    filter : blur(0);
+    transform : translateY(0);
+}
+
+.active {
+    color: red; /* Example: makes the text red */
+    font-weight: bold;
+}

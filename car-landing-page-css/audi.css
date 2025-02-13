@@ -1,0 +1,122 @@
+/* this is temparary */
+body{
+    color : rgb(0, 42, 255);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight : 900;
+    padding-top : 2000px;
+}
+.h-main
+{
+    background-image: url(audi.jpg);
+    background-position:bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height :750px;
+    width : auto;
+    position : absolute;
+    top:0;
+    right :0;
+    left :0;
+    transition: all 1s ease-in-out;
+}
+.main-logo{
+    position : absolute;
+    height :90px;
+    top : 30px;
+    left : 50px;
+}
+
+
+.h-heading
+{
+    position : absolute;
+    top : 30px;
+    right : 160px;
+    align-items: center;
+    display : flex;
+    flex-direction: row;
+    width : 600px;
+    height : 70px;
+    /* background-color: rgb(50, 52, 52); */
+    justify-content: space-around;
+}
+.h-heading div
+{
+    transition : all 0.6s;
+}
+.h-heading div:hover
+{
+    transform: scale(1.5);
+    color : rgb(43, 197, 0);
+}
+.h-three-dash-svg
+{
+    width : 40px;
+    height : auto;
+    position : absolute;
+    top: 50px;
+    right : 50px;
+}
+.h-three-dash-svg-1
+{
+    width : 36px;
+    height : auto;
+    position : absolute;
+    top: 50px;
+    right : 120px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+.h-h1
+{
+    font-style :italic;
+    position: absolute;
+    top : 130px;
+    left : 100px;
+    font-size : 40px;
+}
+/* Hover effect for each letter */
+#glowingText span:hover {
+    color: #fff; /* White text on hover */
+    text-shadow:
+        0 0 5px rgba(255, 255, 255, 0.251),
+        0 0 10px rgba(255, 255, 255, 0.332),
+        0 0 20px rgba(255, 255, 255, 0.636),
+        0 0 40px rgb(0, 229, 255),
+        0 0 80px rgb(0, 234, 255),
+        0 0 90px rgb(0, 0, 0),
+        0 0 100px rgb(0, 0, 0),
+        0 0 150px rgb(0, 0, 0);
+}
+.h-h2 div{
+    margin-top : 40px;
+}
+.h-h2 
+{
+    position : absolute;
+    top : 230px;
+    left : 100px;
+
+}
+.h-img-collection
+{
+    margin-left : 20px;
+    margin-right : 20px;
+    display : grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    column-gap: 20px;
+}
+.h-img
+{
+    position : absolute;
+    width : 250px;
+    bottom : 60px;
+    border-radius : 30px;
+    box-shadow: 0px 0px 30px 10px rgb(255, 255, 255);
+    transition: all 0.8s;
+}
+.h-img:hover
+{
+    transform: scale(1.1);
+    box-shadow : 0px 0px 0px 0px rgb(255, 196, 0)
+}

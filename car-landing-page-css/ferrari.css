@@ -1,0 +1,135 @@
+/* this is temparary */
+body{
+    color : white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight : 900;
+    padding-top : 2000px;
+}
+.h-main
+{
+    background-image: url(ferrari.jpg);
+    background-position:bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height : 1000px;
+    width : auto;
+    position : absolute;
+    top:0;
+    right :0;
+    left :0;
+    transition: all 1s;
+}
+.main-logo{
+    position : absolute;
+    height :90px;
+    top : 30px;
+    left : 100px;
+}
+.h-heading
+{
+    position : absolute;
+    top : 30px;
+    right : 160px;
+    align-items: center;
+    display : flex;
+    flex-direction: row;
+    width : 600px;
+    height : 70px;
+    /* background-color: rgb(50, 52, 52); */
+    justify-content: space-around;
+}
+.h-heading div
+{
+    color : rgb(255, 255, 255);
+    transition : all 0.6s;
+}
+.h-heading div:hover
+{
+    transform: scale(1.5);
+    color : rgb(255, 0, 0);
+}
+.h-three-dash-svg
+{
+    width : 36px;
+    height : auto;
+    position : absolute;
+    top: 50px;
+    right : 50px;
+}
+.h-user-icon
+{
+    position : absolute;
+    top : 50px;
+    right : 120px;
+    background-color: white;
+    border-radius : 50%;
+    height : 34px;
+    
+}
+.h-h1
+{
+    font-style :italic;
+    position: absolute;
+    top : 140px;
+    left : 120px;
+    font-size : 76px;
+}
+/* Default text style
+#glowingText {
+    cursor: pointer;
+    font-size: 24px;
+    color: black; /* Default color */
+
+/* Hover effect for each letter */
+#glowingText span:hover {
+    color: #fff; /* White text on hover */
+    text-shadow:
+        0 0 5px rgba(255,0,0,1),
+        0 0 10px rgba(255,0,0,1),
+        0 0 20px rgba(255,0,0,1),
+        0 0 40px rgba(255,0,255,1),
+        0 0 80px rgba(0,255,255,1),
+        0 0 90px rgba(0,255,255,1),
+        0 0 100px rgba(0,255,255,1),
+        0 0 150px rgba(0,255,255,1);
+}
+.h-h2 div{
+    margin-top : 40px;
+}
+.h-h2 div:hover
+{
+    transform : scale(1.1);
+    color : rgb(255, 0, 0);
+}
+.h-h2 p:hover
+{
+    color :rgb(255, 172, 172)
+}
+.h-h2 
+{
+    position : absolute;
+    top : 400px;
+    left : 90px;
+}
+.h-img-collection
+{
+    margin-left : 20px;
+    margin-right : 20px;
+    display : grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    column-gap: 20px;
+}
+.h-img
+{
+    position : absolute;
+    width : 250px;
+    bottom : 60px;
+    border-radius : 30px;
+    box-shadow: 10px 10px 50px 10px rgba(0,0,0,1);
+    transition: all 0.8s;
+}
+.h-img:hover
+{
+    transform: scale(1.1);
+    box-shadow : 0px 0px 0px 0px rgb(255, 0, 0)
+}

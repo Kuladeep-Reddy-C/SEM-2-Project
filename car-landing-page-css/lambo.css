@@ -1,0 +1,509 @@
+/* this is temparary */
+html
+{
+    scroll-behavior: smooth;
+}
+body{
+    /* color : white; */
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top : 850px;
+}
+/* The sidebar menu */
+.sidebar-content
+{
+    display : flex;
+    flex-direction : column;
+    align-items : start;
+    justify-content: space-around;
+    height : 650px;
+
+}
+
+.sidebar {
+    background-color: rgba(0, 0, 0, .45);
+    -webkit-backdrop-filter: blur(46px);
+    backdrop-filter: blur(46px);
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    left: 0;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+  }
+  
+  /* The sidebar links */
+  .sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidebar a:hover {
+    color: #f1f1f1;
+  }
+  
+  /* Position and style the close button (top right corner) */
+  .sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  /* The button used to open the sidebar */
+  .openbtn {
+    position: absolute;
+    top : 45px;
+    right : 40px;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    padding: 10px 15px;
+    border: none;
+    border-radius : 50%;
+  }
+  
+  .openbtn:hover {
+    background-color: #444;
+    color: #fff;
+  }
+  
+  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+  #main {
+    transition: margin-left .5s; /* If you want a transition effect */
+    padding: 20px;
+  }
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+  }
+
+.h-main
+{
+    color : white;
+    background-image: url(bgs/lambo-orange.jpg);
+    background-position:bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height : 700px;
+    width : auto;
+    position : absolute;
+    top:0;
+    right :0;
+    left :0;
+    transition: all 1s ease-in-out;
+}
+.main-logo{
+    position : absolute;
+    height :90px;
+    top : 30px;
+    left : 100px;
+}
+.h-heading
+{
+    position : absolute;
+    top : 30px;
+    right : 160px;
+    align-items: center;
+    display : flex;
+    flex-direction: row;
+    width : 600px;
+    height : 70px;
+    /* background-color: rgb(50, 52, 52); */
+    justify-content: space-around;
+}
+.h-heading div
+{
+    transition : all 0.6s;
+}
+.h-heading div:hover
+{
+    transform: scale(1.5);
+    color : rgb(255, 98, 0);
+}
+.h-three-dash-svg
+{
+    width : 40px;
+    height : auto;
+    position : absolute;
+    top: 50px;
+    right : 50px;
+}
+.h-three-dash-svg-1
+{
+    width : 36px;
+    height : auto;
+    position : absolute;
+    top: 50px;
+    right : 120px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+.h-h1
+{
+    font-style :italic;
+    position: absolute;
+    top : 120px;
+    left : 120px;
+    font-size : 50px;
+}
+/* Hover effect for each letter */
+#glowingText span:hover {
+    color: #fff; /* White text on hover */
+    text-shadow:
+        0 0 5px rgb(255, 119, 0),
+        0 0 10px rgb(255, 213, 0),
+        0 0 20px rgb(255, 140, 0),
+        0 0 40px rgba(255,0,255,1),
+        0 0 80px rgb(255, 0, 255),
+        0 0 90px rgb(123, 0, 255),
+        0 0 100px rgb(255, 0, 208),
+        0 0 150px rgb(144, 0, 255);
+}
+.h-h2 div{
+    margin-top : 40px;
+}
+.h-h2 
+{
+    position : absolute;
+    top : 180px;
+    left : 100px;
+
+}
+.h-img-collection
+{
+    margin-left : 20px;
+    margin-right : 20px;
+    display : grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    column-gap: 20px;
+}
+.h-img
+{
+    position : absolute;
+    width : 250px;
+    bottom : 60px;
+    border-radius : 30px;
+    box-shadow: 10px 10px 50px 10px rgba(0,0,0,1);
+    transition: all 0.8s;
+}
+.h-img:hover
+{
+    transform: scale(1.1);
+    box-shadow : 0px 0px 0px 0px rgb(255, 60, 0)
+}
+
+.explore-part {
+    margin-bottom : 50px;
+    background-color: #818181;
+    width: 100%;
+    height: 690px; /* Fixed height could be a design choice */
+}
+
+.explore-img {
+    width: 100%;
+    max-height: 690px;
+}
+
+.explore-img-div {
+    position: relative; 
+    height: 100%; /* Ensure the div takes the height of its parent */
+}
+
+.banner-text {
+    position: absolute;
+    top: 80%;
+    left: 15%;
+    transform: translate(-50%, -50%);
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    background-color: rgba(230, 230, 230, 0.45);
+    -webkit-backdrop-filter: blur(46px);
+    backdrop-filter: blur(46px);
+    width: auto; /* or you can specify a width if needed */
+    text-align: center; /* for good measure, ensuring the text is centered */
+}
+
+
+.title
+{
+    color : white;
+    position : absolute;
+    top :10%;
+    right : 8%;
+    font-size : 70px;
+}
+.title-1
+{
+    color : white;
+    position : absolute;
+    top :22%;
+    right : 8%;
+    font-size : 50px;
+
+}
+
+
+.revuelto
+{
+    background-color: rgb(250, 237, 253);
+    margin-bottom : 80px;
+    display : flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items :start;
+}
+/* .rev-matter{
+    flex : 1fr;
+}
+.images-rev{
+    flex:3fr;
+} */
+.rev-img-1
+{
+    overflow: hidden;
+    margin-left : -700px;
+    width : 700px;
+    height : 400px;
+    transition: transform 0.5s ease; /* Smooth transform */
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%); /* Parallelogram shape */
+}
+.rev-img-2
+{
+    margin-top : 50px;
+    width : 780px;
+    height : 400px;
+    transition: transform 0.5s ease; /* Smooth transform */
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%); 
+}
+
+.rev-matter
+{
+    padding : 80px 10px 10px 100px ;
+    font-family: Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight : 300;
+    font-size : 24px;
+}
+
+.rev-title-img
+{
+    width : 300px;
+    height : auto;
+    padding-bottom : 20px;
+}
+.rev-redirect
+{
+    margin-top : 20px;
+    font-family :Arial, Helvetica, sans-serif;
+    font-weight : 700;
+    text-align: center;
+    width : 40%;
+    margin-bottom : 20px;
+    padding : 18px 20px;
+    font-size : 18px;
+    border : none;
+    border-radius : 5px;
+    color : white;
+    background-color: rgb(0, 129, 86);
+    &:hover{
+        background-color : rgba(10, 143, 0, 0.993);
+        
+    }
+}
+
+
+.rev-img-3
+{
+    display: block;
+    margin-left : -140px;
+    width: 1000px;
+    height: 400px;
+    transition: transform 0.5s ease; /* Smooth transform */
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%); 
+}
+.rev-img-4
+{
+    margin-top : 40px;
+    margin-left : -410px;
+    width : 1000px;
+    height : 400px;
+    transition: transform 0.5s ease; /* Smooth transform */
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%); 
+}
+
+.huracan
+{
+    height : 900px;
+    background-color: rgb(232, 255, 255);
+    position : relative;
+}
+
+.rev-matter-2
+{
+    padding: 20px 100px;;
+    width : 500px;
+    HEIGHT : 400PX;
+
+    position : absolute;
+    top : 20%;
+    right : 0px;
+}
+.rev-sub-matter-2
+{
+    font-size : 20px;
+    font-family :Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif, Tahoma, sans-serif;
+}
+.hover-text {
+    text-align: center;
+    padding : 20px 20px;
+    font-family:'Open Sans', sans-serif;
+    font-weight : 700;
+    position: relative;
+    cursor: pointer;
+    margin: 30px 10px;
+    transition : all 1s;
+}
+
+.hover-text::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px; /* Thickness of the underline */
+    bottom: -10px; /* Position just below the text */
+    left: 0;
+    background-color: black; /* Color of the underline */
+    transition: width 0.5s ease, left 0.5s ease; /* Smooth transition for the underline */
+}
+.hover-text:hover
+{
+    border-radius: 10px;
+    background-color: #dddddd;
+}
+.hover-text:hover::after {
+    width: 100%; /* Full width on hover */
+    left: 0; /* Start from the left */
+    transition: width 0.5
+}
+.limited
+{
+    background-color: rgb(250, 237, 253);
+    position: relative;
+}
+.lim-sub-matter
+{
+    font-size : 20px;
+    font-family :Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif, Tahoma, sans-serif;
+}
+.lim-matter
+{
+    margin-top : 50px;
+    /* background-color: #dddddd; */
+    width : 30%;
+    padding : 50px;
+}
+.lim-title 
+{
+    font-family:'Open Sans', sans-serif;
+    font-weight : 700;
+    font-size : 50px;
+    margin-bottom : 30px;
+}
+.lim-img-5
+{
+    position : absolute;
+    top : 45%;
+    right : 0px;
+    width : 900px;
+    transition: transform 0.5s ease; /* Smooth transform */
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%); 
+}
+.lim-img-6
+{
+    margin-top : 100px;
+    position : absolute;
+    top : 75%;
+    left : -190px;
+    width : 800px;
+    transition: transform 0.5s ease; /* Smooth transform */
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%); 
+}
+
+.concept{
+    background-color: rgb(232, 255, 255);
+    height : 1000px;
+    position: relative;
+
+}
+.con-matter
+{
+    font-size : 20px;
+    font-family :Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif, Tahoma, sans-serif;
+    margin-top : 50px;
+    padding : 30px 25%;
+    margin-top : 300px;
+
+}
+.con-title
+{
+    font-family:'Open Sans', sans-serif;
+    font-weight : 700;
+    font-size : 50px;
+    margin-bottom : 30px;
+
+}
+.concept .hover-text
+{
+    width : 50%;
+}
+.con-img-7
+{
+    position : absolute;
+    top : 500px;
+    right : 0;
+    width : 850px;
+    height : 400px;
+    transition: transform 0.5s ease; /* Smooth transform */
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%); 
+}
+.con-img-8
+{
+    margin-top : 100px;
+    position : absolute;
+    top : 400px;
+    left : 0px;
+    width : 850px;
+    height : 400px;
+    transition: transform 0.5s ease; /* Smooth transform */
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%); 
+}
+
+
+.hidden
+{
+    transition : all 1s;
+    opacity :0;
+    filter : blur(5px);
+    transform : translateY(-10%)
+}
+.show
+{
+    opacity :1;
+    filter : blur(0);
+    transform : translateY(0);
+}
+
+.active {
+    color: red; /* Example: makes the text red */
+    font-weight: bold;
+}

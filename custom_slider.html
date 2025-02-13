@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review</title>
+    <link rel="icon" type="image/x-icon" href="Ai/icon.jpg">
+    <script src="https://kit.fontawesome.com/629c368448.js" crossorigin="anonymous"></script>
+
+
+    <style>
+        * { margin: 0; padding: 0;}
+        .hero{
+            background: #eae6e6;
+            height: 100vh;
+            position: relative;
+            width: 100%;
+        }
+
+        .hero h1{
+            text-align: center;
+            padding-top: 80px;
+            font-size: 40px;
+            color: #fff;
+            font-family: 'Arial', sans-serif;
+            font-size: 36px;
+            font-weight: bold;
+            color: #333;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 20px;
+        }
+
+        
+
+        .hero h1::after {
+        content: '';
+        display: block;
+        width: 50px;
+        height: 2px;
+        background-color: #ff6600;
+        margin: 10px auto;
+        }
+
+
+        .sliderow{
+            display: flex;
+            width: 4000px;
+            transition: 0.5s;
+        }
+
+        .slidecol{
+            width: 800px;
+            height: 400px;
+            position: relative;
+        }
+
+        .userimg{
+            position: absolute;
+            top: 0;
+            right: 0;
+            height: 100%;
+        }
+
+        .userimg img{
+            height: 100%;
+            width: 315px;
+            border-radius: 10px;
+        }
+
+        .usertxt{
+            background: #2d3a59;
+            width: 520px;
+            height: 270px;
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            /* transform: translateX(-32%); */
+            border-radius: 10px;
+            color: #eaecf0;
+            padding: 35px;
+            box-sizing: border-box;
+            z-index: 2;
+        }
+
+        .usertxt{
+            font-size: 18px;
+            line-height: 24px;
+        }
+
+        .usertxt h3{
+            margin: 35px 0 5px;
+            color: #fff;
+        }
+
+        .container{
+            width: 800px;
+            height: 400px;
+            position: absolute;
+            top: 55%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+
+        .indi{
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: -50px;
+        }
+
+        .btn1,.btn2,.btn3,.btn4,.btn5{
+            display: inline-block;
+            height: 13px;
+            width: 13px;
+            margin: 4px;
+            border-radius: 15px;
+            background: #4d4949;
+            cursor: pointer;
+            transition: 0.5s;
+        }
+
+        .active{
+            width: 45px;
+        }
+
+        .test{
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        .quo{
+            font-size:x-large;
+            margin-top: 0px;
+        }
+
+        .str{
+            position: absolute;
+            bottom: 28px;
+            right: 32px;
+            color: gold;
+           letter-spacing: 2px;
+        }
+    </style>
+</head>
+<body>
+    <div class="class1 hidden">
+        <div class="hero">
+            <h1>Read what our customers <span style="color: red; font-size: larger; font-style: italic;">LOVE</span> about us!!</h1>
+            <div class="class2 hidden">
+                <div class="container">
+                    <div class="indi">
+                        <span class="btn1 active" id="btn1"></span>
+                        <span class="btn2" id="btn2"></span>
+                        <span class="btn3" id="btn3"></span>
+                        <span class="btn4" id="btn4"></span>
+                        <span class="btn4" id="btn5"></span>
+                    </div>
+                    <div class="test">
+                        <div class="sliderow" id="slide">
+                            <div class="slidecol">
+                                <div class="usertxt">
+                                    <div class="quo"><i class="fa-solid fa-quote-left"></i></div>
+                                    <div class="str"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i></div>
+                                    <p>I'm thrilled with the top-notch delivery and service from Elite Motors. From order to doorstep, every step was seamless. The personalized care was outstanding. Thanks for making my luxury car experience exceptional!</p>
+                                    <h3>Swetha Grover</h3>
+                                    <p style="opacity: 0.6;">Aston Martin DB</p>
+                                </div>
+                    
+                                <div class="userimg">
+                                    <img src="user_profile/s1.jpg" alt="profile">
+                    
+                                </div>
+                            </div>
+                    
+                            <div class="slidecol">
+                                <div class="usertxt">
+                                    <div class="quo"><i class="fa-solid fa-quote-left"></i></div>
+                                    <div class="str"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></div>
+                                    <p>Elite Motors delivered not just a car but an unforgettable experience. From their swift assistance to the flawless quality of work, every interaction exuded excellence, making me a customer for life.</p>
+                                    <h3>Savan Sadhan</h3>
+                                    <p style="opacity: 0.6;">Mercedes GLA</p>
+                                </div>
+                    
+                                <div class="userimg">
+                                    <img src="user_profile/s21.avif" alt="profile">
+                    
+                                </div>
+                            </div>
+                    
+                            <div class="slidecol">
+                                <div class="usertxt">
+                                    <div class="quo"><i class="fa-solid fa-quote-left"></i></div>
+                                    <div class="str"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i></div>
+                                    <p>Exceptional service is the hallmark of Elite Motors. Their dedication to quality shines through every detail, making each purchase a delight and ensuring I'll return for future purchases.</p>
+                                    <h3>Rohan Nair</h3>
+                                    <p style="opacity: 0.6;">BMW GT</p>
+                                </div>
+                    
+                                <div class="userimg">
+                                    <img src="user_profile/s3.jpeg" alt="profile">
+                    
+                                </div>
+                            </div>
+                    
+                            <div class="slidecol">
+                                <div class="usertxt">
+                                    <div class="quo"><i class="fa-solid fa-quote-left"></i></div>
+                                    <div class="str"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                                    <p>Elite Motors sets the bar high with their impeccable service and superior quality of work. Their assistance throughout the process was invaluable, ensuring a seamless delivery and a happy customer.</p>
+                                    <h3>Naveen Mishra</h3>
+                                    <p style="opacity: 0.6;">Lamborghini Huracan</p>
+                                </div>
+                    
+                                <div class="userimg">
+                                    <img src="user_profile/s4.avif" alt="profile">
+                    
+                                </div>
+                            </div>
+                    
+                            <div class="slidecol">
+                                <div class="usertxt">
+                                    <div class="quo"><i class="fa-solid fa-quote-left"></i></div>
+                                    <div class="str"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                                    <p>When it comes to luxury cars, Elite Motors stands out for their top-notch service, unparalleled quality of work, and unwavering assistance. They redefine excellence in every aspect, making every interaction a pleasure.</p>
+                                    <h3>Anushka Iyer</h3>
+                                    <p style="opacity: 0.6;">Audi Q</p>
+                                </div>
+                    
+                                <div class="userimg">
+                                    <img src="user_profile/s5.avif" alt="profile">
+                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                   
+                </div>
+            </div>
+            
+            
+        
+            
+        
+           </div>
+    </div>
+   
+   
+   <script>
+        // var btn = document.getElementById("btn");
+        var btn1 = document.getElementById("btn1");
+        var btn2 = document.getElementById("btn2");
+        var btn3 = document.getElementById("btn3");
+        var btn4 = document.getElementById("btn4");
+        var btn5 = document.getElementById("btn5");
+
+        var slide = document.getElementById("slide");
+
+        btn1.onclick = function() {
+            slide.style.transform="translateX(0px)";
+            btn1.classList.remove("active");
+            btn2.classList.remove("active");
+            btn3.classList.remove("active");
+            btn4.classList.remove("active");
+            btn5.classList.remove("active");
+            this.classList.add("active");
+        }
+
+        btn2.onclick = function(){
+            slide.style.transform="translateX(-800px)";
+            btn1.classList.remove("active");
+            btn2.classList.remove("active");
+            btn3.classList.remove("active");
+            btn4.classList.remove("active");
+            btn5.classList.remove("active");
+            this.classList.add("active");
+        }
+
+        btn3.onclick = function(){
+            slide.style.transform="translateX(-1600px)";
+            btn1.classList.remove("active");
+            btn2.classList.remove("active");
+            btn3.classList.remove("active");
+            btn4.classList.remove("active");
+            btn5.classList.remove("active");
+            this.classList.add("active");
+        }
+
+        btn4.onclick = function(){
+            slide.style.transform="translateX(-2400px)";
+            btn1.classList.remove("active");
+            btn2.classList.remove("active");
+            btn3.classList.remove("active");
+            btn4.classList.remove("active");
+            btn5.classList.remove("active");
+            this.classList.add("active");
+        }
+
+        btn5.onclick = function(){
+            slide.style.transform="translateX(-3200px)";
+            btn1.classList.remove("active");
+            btn2.classList.remove("active");
+            btn3.classList.remove("active");
+            btn4.classList.remove("active");
+            btn5.classList.remove("active");
+            this.classList.add("active");
+        }
+
+        // btn[0].onclick = function() {
+        //     slide.style.transform="translateX(0px)";
+        // }
+
+        // btn[1].onclick = function(){
+        //     slide.style.transform="translateX(-800px)";
+        // }
+
+        // btn[2].onclick = function(){
+        //     slide.style.transform="translateX(-1600px)";
+        // }
+
+        // btn[3].onclick = function(){
+        //     slide.style.transform="translateX(-2400px)";
+        // }
+
+        // btn[4].onclick = function(){
+        //     slide.style.transform="translateX(0px)";
+        // }
+        
+   </script>
+</body>
+</html>
